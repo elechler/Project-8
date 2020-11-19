@@ -1,0 +1,139 @@
+/* ============================ ELEMENT STYLING */
+img {
+    border-radius: 50%;
+    padding: 10px;
+}
+body {
+    position: relative;
+}
+button {
+    background-color: transparent;
+    border-style: none;
+}
+h1 {
+    font-size: 1.3em;
+}
+/* ============================ GRID LAYOUT AND CARD STYLING */
+.card {
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+}
+.grid-container {
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+  }
+
+  /* ============================ FIX THIS FOR ALL CARDS */
+  .card1 {
+      position: relative;
+      border: 2px solid red;
+      height: 200px;
+  }
+.avatar1 {
+    position: absolute;
+    top: 10%;
+    left: 10px;
+}
+.text-container1 {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    border: 2px solid blue;
+    width: 60%;
+}
+/* ============================ MODAL STYLING   */
+.hidden {
+    display: none;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4);
+}
+.modal {
+    position: relative;
+    width: 33%;
+    margin: 10% auto;
+    text-align: center;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #778;
+}
+.modal-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+/*=========================================== MQ TABLET =======================================*/
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 48% 48%;
+        grid-template-areas:
+        "card card";
+    }
+
+    /* ============================ FIX THIS FOR ALL CARDS */
+    .text-container1 {
+        width: 50%;
+    }
+/* ===================== JUST DOING THIS SO I COULD SEE IT BEFORE JS */
+    
+    .hidden {
+        display: initial;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    .grid-container {
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas:
+        "card card card";
+    }
+    
+}
+
+
+
+
+
+
+
+
+/*=========================================== MQ TABLET =======================================*/
+/* @media (min-width: 768px) {
+    .alert {
+        grid-area: alert;
+    }
+    .grid-container {
+        grid-template-columns: 55px 1fr;
+        grid-template-areas:
+        "head head"
+        "main main";
+    }
+    .main-grid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 75px 370px 370px;
+        grid-template-areas:
+        "navigation dashboard dashboard"
+        "navigation alert alert"
+        "navigation traffic traffic"
+        "navigation daily daily"
+        "navigation social social"
+        "navigation members members"
+        "navigation message message";
+    }
+} */
+ 
+
